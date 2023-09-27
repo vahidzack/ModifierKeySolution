@@ -12,12 +12,16 @@ namespace ModifierKey.Controllers
     [ApiController]
     public class ModifierKeywordsController : ControllerBase
     {
+
+        #region Constractor
         private readonly AppDbContext _context;
 
         public ModifierKeywordsController(AppDbContext context)
         {
             _context = context;
         }
+        #endregion
+
 
         #region GetAllModifier
 
